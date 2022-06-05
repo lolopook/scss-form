@@ -1,0 +1,253 @@
+@import "color";
+@import "font";
+@import "checkBtn";
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.containerForm {
+    max-width: 1320px;
+
+    min-width: 40%;
+    height: 800px;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: $backColorForm;
+
+    margin: 30px auto;
+
+    box-shadow: 3px 3px 10px black;
+
+    border-radius: 30px;
+
+    .formComplete {
+        width: 55%;
+        min-width: 30%;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 4%;
+        margin-top: 5%;
+
+        .logo {
+            margin: 30px 0 30px 30px;
+    
+            display: flex;
+            align-items:  center;
+    
+            i  {
+                padding-right: 10px;
+                font-size: 2em;
+                color: $colorOne;
+            }
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+
+            width: 60%;
+
+            .logIn {
+
+                h1 {
+                    padding-bottom: 5px;
+                }
+
+                .color {
+                    color : $colorOne;
+                }
+
+                .singUp {
+                    display:  flex;
+                    justify-content: space-between;
+
+                    padding-bottom: 10px;
+
+                    span {
+                        a {
+                            text-decoration: none;
+                            color : $colorOne;
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .formEnter {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    margin : 5px 0;
+                }
+
+                input {
+                    height: 30px;
+                    border-radius: 40px;
+
+                    padding-left: 10px;
+
+                    border: solid 2px $borderBtn;
+                    background-color: $borderBtn;
+                    box-shadow: inset 8px 8px 10px rgb(205, 205, 205);
+                }
+
+                .btnRecover {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    width: 100%;
+
+                    margin-top: 16px;
+
+                    a {
+                            text-decoration: none;
+                            color: red;
+                    }
+                    .btnbtn {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        
+                        @include btn;
+
+                        .closedTo {
+                            padding-left: 5px;
+
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+
+                    }
+                }
+
+                .or {
+                    display: flex;
+                    justify-content: center;
+                    .borderbottom {
+                        width: 48%;
+
+                        border-bottom: solid 1px rgb(138, 171, 192);
+
+                        margin: 2%;
+                    }
+                }
+
+            }
+
+        
+        }
+    }
+
+    .btnLogContainer {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 16px;
+
+
+        .btnLogIn {
+            font-weight: 400;
+            font-size: 0.8em;
+
+            padding: 8px 3px;
+            margin:2%;
+            width: 38%;
+            min-width: 150px;
+
+            border-radius: 30px;
+            border: solid $borderBtn 2px;
+            background-color: $backColorForm;
+
+            box-shadow: 0 3px 10px grey;
+
+            cursor: pointer;
+            i {
+                padding: 0 5px;
+            }
+        }
+    }
+
+
+    .imageRight {
+        width: 45%;
+        height: 800px;
+        
+        background-image: url("../imgs/towerHotel.jpeg");
+
+        background-position:right;
+
+        background-repeat: no-repeat;
+
+        border-radius: 0 30px 30px 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .imageEditor {
+            border-radius: 30px;
+
+            height: 50px;
+            width: 200px;
+            margin-top: 25%;
+
+            backdrop-filter: blur(3px);
+            background-color: rgba($color: #5b5b5b, $alpha: 0.8);
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: solid 2px white;
+            
+        }
+
+        .descriptionImg {
+            font-size: 1em;
+            color: white;
+
+            border-radius: 30px;
+            border: solid 2px white;
+
+            padding: 30px;
+            margin: 65% 10% 0 0;
+
+            height: 160px;
+            width: 250px;
+
+            backdrop-filter: blur(3px);
+            background-color: rgba($color: #5b5b5b, $alpha: 0.8);
+
+            i {
+                color: white;
+                background-color: black;
+
+                border: solid white 2px;
+                border-radius: 10px;
+                padding: 10px 10px;
+                margin: 0 0 7px 7px;
+            }
+        }
+    }
+}
