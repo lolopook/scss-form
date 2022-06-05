@@ -251,3 +251,20 @@
         }
     }
 }
+
+@media (max-width : 768px) {
+    .containerForm {
+        .formComplete {
+            width: 100%;
+            .form {
+                width: 80%;
+            }
+        }
+        
+        .imageRight {
+            display: none;
+        }
+
+    }
+        
+}
